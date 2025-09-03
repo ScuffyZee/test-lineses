@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <header class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <Image src="/acheron.jpg" width={80} height={80}></Image>
+    <Image src="/acheron.png" width={80} height={80}></Image>
     <span class="ml-3 text-xl">Zidane Lineses</span>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-white">First Link</a>
