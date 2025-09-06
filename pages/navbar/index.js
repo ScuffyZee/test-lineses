@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 const Navbar = () => {
   return (
     <header class="text-gray-400 bg-gray-900 body-font">
@@ -7,16 +8,19 @@ const Navbar = () => {
     <Image src="/acheron.png" width={80} height={80}></Image>
     <span class="ml-3 text-xl">Zidane Lineses</span>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white">First Link</a>
-      <a class="mr-5 hover:text-white">Second Link</a>
-      <a class="mr-5 hover:text-white">Third Link</a>
-      <a class="mr-5 hover:text-white">Fourth Link</a>
+      <Link href="/">
+      <div class="mr-5 hover:text-white">Home</div>
+      </Link>
+      <Link href="/About">
+      <div class="mr-5 hover:text-white">About</div>
+      </Link>
+      <Link href="/Contact">
+      <div class="mr-5 hover:text-white">Contact Us</div>
+      </Link>
+      <Link href="/Content">
+      <div class="mr-5 hover:text-white">Content</div>
+      </Link>
     </nav>
-    <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button>
   </div>
 </header>
   )
